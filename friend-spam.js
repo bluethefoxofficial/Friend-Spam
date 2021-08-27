@@ -1,3 +1,5 @@
+ 
+var Total = 0;
  if (document.all !== undefined)
     {
       var items = document.all;
@@ -9,5 +11,8 @@
         for (var i = 0; i < items.length; ++i) {
         if (items[i].textContent.includes("Add Friend")) {
             items[i].click();
+            total++;
         }
+
+        alert("FS: Total of add friends clicked:" + total);
     }
